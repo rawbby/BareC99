@@ -1,0 +1,23 @@
+#ifndef CORE_COMMON_COMMON_DEBUGBREAK_H
+#define CORE_COMMON_COMMON_DEBUGBREAK_H
+
+#ifdef NDEBUG
+
+#define DEBUG_BREAK() ((void)0)
+
+#else
+
+#ifdef _WIN32
+#include <windows.h>
+#define DEBUG_BREAK() DebugBreak()
+
+#else
+#define DEBUG_BREAK() ((void)0)
+
+#endif
+
+#endif
+
+#define ON_ERROR(e) if (!(e))
+
+#endif

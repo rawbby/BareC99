@@ -1,0 +1,14 @@
+.idea/**
+!.idea/misc.xml
+!.idea/csv.xml
+
+!.idea/codeStyles/
+.idea/codeStyles/**
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+
+!.idea/inspectionProfiles/
+.idea/inspectionProfiles/**
+!.idea/inspectionProfiles/Project_Default.xml
+
+cmake-build-*/
